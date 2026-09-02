@@ -1,0 +1,67 @@
+[
+  {
+    "network": "10.10.0.0/24",
+    "description": "R&D Lab - Building A",
+    "site": "OpenText-SantaClara",
+    "vlan_id": 110,
+    "total_ips": 254,
+    "used_ips": 248,
+    "gateway": "10.10.0.1",
+    "assigned": [
+      {"ip": "10.10.0.1", "host": "gw-a-01", "status": "active"},
+      {"ip": "10.10.0.10", "host": "lab-srv-01", "status": "active"},
+      {"ip": "10.10.0.11", "host": "lab-srv-02", "status": "active"},
+      {"ip": "10.10.0.10", "host": "lab-srv-01-dup", "status": "active"}
+    ]
+  },
+  {
+    "network": "10.10.1.0/24",
+    "description": "R&D Lab - Building B",
+    "site": "OpenText-SantaClara",
+    "vlan_id": 111,
+    "total_ips": 254,
+    "used_ips": 12,
+    "gateway": "10.10.1.1",
+    "assigned": [
+      {"ip": "10.10.1.1", "host": "gw-b-01", "status": "active"},
+      {"ip": "10.10.1.5", "host": "lab-srv-10", "status": "active"}
+    ]
+  },
+  {
+    "network": "10.20.0.0/23",
+    "description": "Corporate Office - Minneapolis",
+    "site": "SynapsIQ-MSP",
+    "vlan_id": 210,
+    "total_ips": 510,
+    "used_ips": 495,
+    "gateway": "10.20.0.1",
+    "assigned": [
+      {"ip": "10.20.0.1", "host": "gw-msp-01", "status": "active"}
+    ]
+  },
+  {
+    "network": "172.16.5.0/24",
+    "description": "Legacy HPE Range - Pending Migration",
+    "site": "HPE-Legacy",
+    "vlan_id": 305,
+    "total_ips": 254,
+    "used_ips": 40,
+    "gateway": "172.16.5.1",
+    "assigned": [
+      {"ip": "172.16.5.1", "host": "gw-legacy-01", "status": "active"},
+      {"ip": "172.16.5.2", "host": "legacy-dc-01", "status": "decommissioned"}
+    ]
+  },
+  {
+    "network": "192.168.100.0/28",
+    "description": "AWS us-east-1 VPC - Management Subnet",
+    "site": "AWS-us-east-1",
+    "vlan_id": null,
+    "total_ips": 14,
+    "used_ips": 14,
+    "gateway": "192.168.100.1",
+    "assigned": [
+      {"ip": "192.168.100.1", "host": "aws-tgw-attach-01", "status": "active"}
+    ]
+  }
+]

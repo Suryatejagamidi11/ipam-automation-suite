@@ -1,0 +1,15 @@
+# Environment / credentials
+.env
+*.env
+venv/
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Generated reports (optional -- remove this line if you want to commit sample output)
+reports/*.md
+!reports/.gitkeep
